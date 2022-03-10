@@ -1,0 +1,235 @@
+.main-content-about
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content-info-image-about
+{
+    width: 700px;
+    margin: 0px;
+}
+
+.content-info-image-about
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content-info-image-about .child-info-about:not(:last-of-type)
+{
+    width: 210px;
+    height: max-content;
+    border-radius: 10px;
+    background-color: var(--color-bg-varient);
+    border: 1px solid var(--color-bg-varient);
+    margin: 5px 0px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    transition: var(--transition-hover);
+}
+
+
+.content-info-image-about .child-info-about:last-of-type
+{
+    margin: 1.5rem 0px;
+}
+
+.content-info-image-about .child-info-about:last-of-type p
+{
+    margin-bottom: 2rem;
+}
+
+.content-info-image-about .child-info-about:hover
+{
+    background-color: transparent;
+}
+
+.content-info-image-about .child-info-about h3
+{
+    color: var(--color-white);
+    margin-bottom: 0px;
+}
+
+.content-info-image-about .child-info-about h5
+{
+    color: var(--color-primary-varient);
+}
+
+.icons
+{
+    font-size: 25px;
+    color: var(--color-primary);
+}
+
+.main-image-about
+{
+    width: 350px;
+    height: 350px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.myimage-content-about
+{
+    overflow: hidden;
+    cursor: pointer;
+    width: 350px;
+    height: 350px;
+    transform: rotateZ(7deg);
+    transition: var(--transition-hover);
+}
+
+.myimage-content-about img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.myimage-content-about:hover
+{
+    transform: rotateZ(0deg);
+}
+
+
+/*****************************Media query****************/
+
+@media (max-width:375px) {
+
+.main-image-about
+{
+    width: 250px;
+    height: 300px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.myimage-content-about
+{
+    overflow: hidden;
+    cursor: pointer;
+    width: 250px;
+    height: 300px;
+    transform: rotateZ(7deg);
+    transition: var(--transition-hover);
+}
+
+.content-info-image-about .child-info-about:last-of-type
+{
+    padding: 20px;
+    width: 300px;
+}
+
+.content-info-image-about .child-info-about:last-of-type p
+{
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+}
+
+/**************/
+
+@media (min-width:375px) {
+
+    .main-image-about
+    {
+        width: 350px;
+        height: 300px;
+        background-color: var(--color-primary);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    
+    .myimage-content-about
+    {
+        overflow: hidden;
+        cursor: pointer;
+        width: 350px;
+        height: 300px;
+        transform: rotateZ(7deg);
+        transition: var(--transition-hover);
+    }
+    
+    .content-info-image-about .child-info-about:not(:last-of-type)
+    {
+    width: 300px;
+    }
+    .content-info-image-about .child-info-about:last-of-type
+    {
+        width: 350px;
+    }
+    
+    .content-info-image-about .child-info-about:last-of-type p
+    {
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width:768px) {
+
+    .main-image-about
+    {
+        width: 450px;
+    }
+    
+    .myimage-content-about
+    {
+        width: 450px;
+    }
+    
+    .content-info-image-about .child-info-about:not(:last-of-type)
+    {
+        width: 280px;
+    }
+    .content-info-image-about .child-info-about:last-of-type
+    {
+        width: 550px;
+    }
+    
+    .content-info-image-about .child-info-about:last-of-type p
+    {
+        font-size: 18px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .main-image-about
+    {
+        width: 400px;
+    }
+    
+    .myimage-content-about
+    {
+        width: 400px;
+    }
+    
+    .content-info-image-about .child-info-about:not(:last-of-type)
+    {
+        width: 210px;
+    }
+    .content-info-image-about .child-info-about:last-of-type
+    {
+        width: 650px;
+    }
+    
+    .content-info-image-about .child-info-about:last-of-type p
+    {
+        font-size: 18px;
+        margin-bottom: 2rem;
+    }
+    }

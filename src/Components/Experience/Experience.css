@@ -1,0 +1,153 @@
+.main-content-exper
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-content-exper .child-content-exper
+{
+    background-color: var(--color-bg-varient);
+    width: 500px;
+    border: 1px solid var(--color-bg-varient);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: var(--transition-hover);
+}
+
+.main-content-exper .child-content-exper:hover
+{
+    background-color: transparent;
+}
+
+.main-content-exper .child-content-exper .content-skills
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 450px;
+}
+
+.main-content-exper .child-content-exper .content-skills .skills
+{
+    width: 45%;
+    margin: 10px;
+}
+
+.main-content-exper .child-content-exper .content-skills .skills h2 span
+{
+    color: var(--color-primary);
+}
+
+.main-content-exper .child-content-exper .content-skills .skills h2
+{
+    text-transform: uppercase;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.main-content-exper .child-content-exper .content-skills .skills h5
+{
+    margin-top: 0px;
+    color: var(--color-primary-varient);
+}
+
+/******************************************/
+
+@media (max-width:375px) {
+ 
+.main-content-exper .child-content-exper
+{
+    background-color: var(--color-bg-varient);
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: var(--transition-hover);
+}
+
+.main-content-exper .child-content-exper .content-skills
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.main-content-exper .child-content-exper .content-skills .skills
+{
+    width: 90%;
+    margin: 10px;
+}
+
+}
+
+@media (min-width:375px) {
+ 
+    .main-content-exper .child-content-exper
+    {
+        width: 350px;
+    }
+    
+    .main-content-exper .child-content-exper .content-skills
+    {
+        width: 300px;
+    }
+    
+    .main-content-exper .child-content-exper .content-skills .skills
+    {
+        width: 80%;
+        margin: 10px;
+    }
+    
+    }
+
+@media (min-width:768px) {
+
+    .main-content-exper .child-content-exper
+    {
+        width: 280px;
+    }
+    
+    .main-content-exper .child-content-exper .content-skills
+    {
+        width: 300px;
+    }
+    
+    .main-content-exper .child-content-exper .content-skills .skills
+    {
+        width: 80%;
+        margin: 10px;
+    }
+    
+}
+
+@media (min-width:1200px) {
+
+    .main-content-exper .child-content-exper
+    {
+        width: 500px;
+    }
+    
+    .main-content-exper .child-content-exper .content-skills
+    {
+        width: 450px;
+    }
+    
+    .main-content-exper .child-content-exper .content-skills .skills
+    {
+        width: 45%;
+        margin: 10px;
+    }
+    
+    }
